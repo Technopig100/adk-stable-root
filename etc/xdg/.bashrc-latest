@@ -1,0 +1,11 @@
+#!/bin/bash
+#set -e 
+
+### EXPORT ###
+export EDITOR='nano'
+export VISUAL='nano'
+export HISTCONTROL=ignoreboth:erasedups
+
+PS1='[\u@\h \W]\$ '
+
+neofetch
