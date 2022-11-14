@@ -42,9 +42,9 @@ alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
-#sudo pacman unlock
-alias unlock="sudo rm /var/lib/sudo pacman/db.lck"
-alias sudo pacmanlock="sudo rm /var/lib/sudo pacman/db.lck"
+#pacman unlock
+alias unlock="sudo rm /var/lib/pacman/db.lck"
+alias pacmanlock="sudo rm /var/lib/pacman/db.lck"
 
 #refesh bash
 alias refresh="source ~/.bashrc"
@@ -52,11 +52,11 @@ alias refresh="source ~/.bashrc"
 #update all of the packages
 alias update='sudo pacman -Syyuu'
 
-#clean sudo pacman cache
+#clean pacman cache
 alias clean='sudo pacman -Scc'
 
 #download installed packages but don't install
-alias pacdn='sudo sudo pacman -Qqn | sudo sudo pacman -Sw -'
+alias pacdn='sudo pacman -Qqn | sudo pacman -Sw -'
 
 #continue download
 alias wget="wget -c"
@@ -74,8 +74,8 @@ alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 ## alias install-grub-efi='sudo grub-install --target=x86_64-efi --efi-directory=/boot/efi --recheck'
 
 # Help people new to ADK-Linux
-alias apt-get='man sudo pacman'
-alias apt='man sudo pacman'
+alias apt-get='man pacman'
+alias apt='man pacman'
 alias please='sudo'
 
 #copy/paste all content of /etc/skel over to home folder - backup of config created - beware
@@ -94,10 +94,10 @@ alias hw="hwinfo --short"
 alias microcode='grep . /sys/devices/system/cpu/vulnerabilities/*'
 
 #get fastest mirrors in your neighborhood
-alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/sudo pacman.d/mirrorlist"
-alias mirrord="sudo reflector --latest 30 --number 10 --sort delay --save /etc/sudo pacman.d/mirrorlist"
-alias mirrors="sudo reflector --latest 30 --number 10 --sort score --save /etc/sudo pacman.d/mirrorlist"
-alias mirrora="sudo reflector --latest 30 --number 10 --sort age --save /etc/sudo pacman.d/mirrorlist"
+alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
+alias mirrord="sudo reflector --latest 30 --number 10 --sort delay --save /etc/pacman.d/mirrorlist"
+alias mirrors="sudo reflector --latest 30 --number 10 --sort score --save /etc/pacman.d/mirrorlist"
+alias mirrora="sudo reflector --latest 30 --number 10 --sort age --save /etc/pacman.d/mirrorlist"
 
 #recent Installed Packages
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
@@ -108,25 +108,25 @@ alias iso="bat /etc/dev-rel"
 alias isoo="bat /etc/dev-rel"
 
 #Cleanup orphaned packages
-alias cleanup='sudo sudo pacman -Rns $(sudo pacman -Qtdq)'
+alias cleanup='sudo pacman -Rns $(sudo pacman -Qtdq)'
 
 #get the error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
 
 #nano for important configuration files
 #know what you do in these files
-alias nsudo pacman="sudo $EDITOR /etc/sudo pacman.conf"
+alias npacman="sudo $EDITOR /etc/pacman.conf"
 alias ngrub="sudo $EDITOR /etc/default/grub"
 alias nmkinitcpio="sudo $EDITOR /etc/mkinitcpio.conf"
-alias nmirrorlist="sudo $EDITOR /etc/sudo pacman.d/mirrorlist"
-alias nadkmirrorlist="sudo $EDITOR /etc/sudo pacman.d/adklinux-mirrorlist"
+alias nmirrorlist="sudo $EDITOR /etc/pacman.d/mirrorlist"
+alias nadkmirrorlist="sudo $EDITOR /etc/pacman.d/adklinux-mirrorlist"
 alias nsddmk="sudo $EDITOR /etc/sddm.conf.d/kde_settings.conf"
 alias nfstab="sudo $EDITOR /etc/fstab"
 alias nhosts="sudo $EDITOR /etc/hosts"
 alias nhostname="sudo $EDITOR /etc/hostname"
 
 #reading logs with bat
-alias lsudo pacman="bat /var/log/sudo pacman.log"
+alias lpacman="bat /var/log/pacman.log"
 alias lxorg="bat /var/log/Xorg.0.log"
 alias lxorgo="bat /var/log/Xorg.0.log.old"
 
