@@ -57,6 +57,7 @@ alias clean='sudo pacman -Scc'
 
 #download installed packages but don't install
 alias pacdn='sudo pacman -Qqn | sudo pacman -Sw -'
+alias plist='pacman -Qq > $HOME/package.lst'
 
 #continue download
 alias wget="wget -c"
