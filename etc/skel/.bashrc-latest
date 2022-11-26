@@ -127,6 +127,13 @@ alias lxorgo="bat /var/log/Xorg.0.log.old"
 
 #fixes
 alias fix-permissions="sudo chown -R $USER:$USER ~/.config ~/.local"
+alias fix-keys='/usr/share/adklinux-fkeys/scripts/fix-pacman-databases-and-keys.sh'
+alias fixkeys='/usr/share/adklinux-fkeys/scripts/fix-pacman-databases-and-keys.sh'
+alias fix-key='/usr/share/adklinux-fkeys/scripts/fix-pacman-databases-and-keys.sh'
+alias fixkey='/usr/share/adklinux-fkeys/scripts/fix-pacman-databases-and-keys.sh'
+alias key-fix='/usr/share/adklinux-fkeys/scripts/fix-pacman-databases-and-keys.sh'
+alias keysfix='/usr/share/adklinux-fkeys/scripts/fix-pacman-databases-and-keys.sh'
+alias keys-fix='/usr/share/adklinux-fkeys/scripts/fix-pacman-databases-and-keys.sh'
 
 # # ex = EXtractor for all kinds of archives
 # # usage: ex <file>
