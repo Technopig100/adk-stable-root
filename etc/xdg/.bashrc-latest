@@ -7,5 +7,3 @@ export VISUAL='nano'
 export HISTCONTROL=ignoreboth:erasedups
 
 PS1='[\u@\h \W]\$ '
-
-neofetch
