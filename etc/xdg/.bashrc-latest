@@ -6,4 +6,7 @@ export EDITOR='nano'
 export VISUAL='nano'
 export HISTCONTROL=ignoreboth:erasedups
 
+alias iso="bat /etc/dev-rel"
+alias isoo="bat /etc/adklinux/info"
+
 PS1='[\u@\h \W]\$ '
